@@ -1,0 +1,52 @@
+/* Simple layout matching the teacher's Guess Game example */
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: white;
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 24px;
+}
+.main-container {
+  max-width: 1016px;
+  margin: 0 auto;
+  padding: 48px 24px;
+}
+h2 {
+  font-size: 36px;
+  margin: 0 0 28px;
+  font-weight: 700;
+}
+.input { display: flex; flex-direction: column; align-items: flex-start; gap: 30px; }
+#guess-value {
+  width: 428px;
+  max-width: 100%;
+  height: 54px;
+  padding: 5px 12px;
+  border: 3px solid #222;
+  border-radius: 6px;
+  background: white;
+  color: black;
+  font: inherit;
+}
+button {
+  background: blue;
+  color: white;
+  border: 2px solid #555;
+  border-radius: 9px;
+  font-size: 30px;
+  padding: 8px 12px;
+  cursor: pointer;
+}
+hr {
+  margin: 12px 0 10px;
+  border: 0;
+  border-top: 1px solid #999;
+}
+#result { min-height: 30px; }
+@media (max-width: 550px) {
+  body { font-size: 20px; }
+  .main-container { padding: 35px 22px; }
+  h2 { font-size: 32px; }
+  button { font-size: 26px; }
+}
